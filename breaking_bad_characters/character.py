@@ -79,9 +79,9 @@ class Walt(Character):
             phrase = 'Everything I do, I do for this family.',
             job = 'Teacher',
             action = 'Cook',
-            description = 'An overqualified high school chemistry teacher that \
-            gets sick with cancer. In an effort to provide for his family, he decides to \
-            partner with former student, Jesse Pinkman, to produce and sell methamphetamine.',
+            description = 'An overqualified high school chemistry teacher that' \
+            'gets sick with cancer. In an effort to provide for his family, he decides to' \
+            'partner with former student, Jesse Pinkman, to produce and sell methamphetamine.',
             portrayed_by = 'Bryan Cranston'
         )
         self.alias = 'Heisenberg'
@@ -113,15 +113,16 @@ class Jesse(Character):
             portrayed_by = 'Aaron Paul'
         )
 
-class Tuco(Character):
+class Skyler(Character):
     def __init__(self):
         super().__init__(
-            name = 'Tuco',
-            phrase = 'Tight, tight, yeah!',
-            job = 'Drug Distributor',
-            action = 'Snorting drugs off a bowie knife and beating his homies when they diss him',
-            description = 'A sadistic, high-level, drug distributor for the Salamanca cartel',
-            portrayed_by = 'Raymond Cruz'
+            name = 'Skyler White',
+            phrase = 'Do not...sell marijuana to my husband.',
+            job = 'Bookkeeper and Author',
+            action = 'Being suspicious of Walt',
+            description = 'The wife of Walter White and sister of Marie Schrader. Skyler is suspicious of Walter' \
+            'early on. She eventually kicks Walt out of the home, worrying that he is putting the family in danger.',
+            portrayed_by = 'Anna Gunn'
         )
 
 class Walter_Jr(Character):
@@ -131,8 +132,42 @@ class Walter_Jr(Character):
             phrase = 'Something, something, breakfast.',
             job = 'Son',
             action = 'Eat Breakfast',
-            description = 'The son of Walter and Skylar White. He likes to eat breakfast' \
+            description = 'The son of Walter and Skyler White. He likes to eat breakfast' \
             'and is always getting rides to school from Louis.',
             portrayed_by = 'RJ Mitte'
         )
         self.alias = 'Flynn'
+
+class Hank(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Hank Schrader',
+            phrase = 'It\'s easy money...till we catch you!', # FIX ME 
+            job = 'DEA Agent',
+            action = 'Obsess over Heisenberg',
+            description = '',
+            portrayed_by = 'Dean Norris'
+        )
+
+class Marie(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Marie Schrader',
+            phrase = 'YOU...are in big trouble.',
+            job = 'Radiologoy Technician',
+            action = 'Steal',
+            description = 'The wife of Hank Schrader and sister of Skyler White.' \
+            'She enjoys the color purple and stealing things',
+            portrayed_by = 'Raymond Cruz'
+        )
+
+class Tuco(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Tuco Salamanca',
+            phrase = 'Tight, tight, yeah!',
+            job = 'Drug Distributor',
+            action = 'Snorting drugs off a bowie knife and beating his homies when they diss him',
+            description = 'A sadistic, high-level, drug distributor for the Salamanca cartel',
+            portrayed_by = 'Raymond Cruz'
+        )
