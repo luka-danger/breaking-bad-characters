@@ -38,9 +38,9 @@ class Character:
     Args: none
 
     example return: 
-    'Name: Walter White, Phrase: "Let's Cook", 
-    Occupation: Methamphetamine Manufacturer,
-    Action: Cook, Portrayed By: Bryan Cranston'
+    'Name: Walter White, Phrase: "Everything I do, I do for this family.", 
+    Occupation: Chemistry Teacher,
+    Portrayed By: Bryan Cranston'
     
     '''
     def get_info(self):
@@ -65,7 +65,7 @@ class Character:
     
     '''
     def print_info(self):
-        print(f'Name: {self.name}, Phrase: {self.phrase}, Occupation: {self.job},'
+        print(f'Name: {self.name}, Phrase: {self.phrase}, Occupation: {self.job}, '
               f'Action: {self.action}, Portrayed By: {self.portrayed_by} ')
         
     
@@ -75,7 +75,17 @@ class Walt(Character):
             name = 'Walter White',
             phrase = 'Everything I do, I do for this family.',
             job = 'Teacher',
-            action = 'cook',
+            action = 'Cook',
             portrayed_by = 'Bryan Cranston'
         )
         self.alias = 'Heisenberg'
+
+class Heisenberg(Walt):
+    def __init__(self):
+        super().__init__()
+
+        self.name = 'Heisenberg'
+        self.phrase = 'Say my name.'
+        self.job = 'Drug Kingpin'
+        self.action = 'Intimidate'
+    
