@@ -123,4 +123,16 @@ class Tuco(Character):
             description = 'A sadistic, high-level, drug distributor for the Salamanca cartel',
             portrayed_by = 'Raymond Cruz'
         )
-    
+
+class Walter_Jr(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Walter Jr.',
+            phrase = 'Something, something, breakfast.',
+            job = 'Son',
+            action = 'Eat Breakfast',
+            description = 'The son of Walter and Skylar White. He likes to eat breakfast' \
+            'and is always getting rides to school from Louis.',
+            portrayed_by = 'RJ Mitte'
+        )
+        self.alias = 'Flynn'
