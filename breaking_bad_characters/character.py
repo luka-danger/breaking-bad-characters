@@ -27,7 +27,7 @@ class Character:
     "Hello, my name is Walter White. Let's cook."
 
     '''
-    def say_name(self, name, phrase):
+    def say_name(self):
         return 'My name is {}. {}'.format(self.name, self.phrase)
 
 
@@ -51,3 +51,31 @@ class Character:
             'Action': self.action,
             'Portrayed By': self.portrayed_by
         }
+    
+    '''
+    A method that returns all info about character and displays
+    it with labels for readability and improved UX. 
+
+    Args: none
+
+    example return: 
+    'Name: Walter White, Phrase: "Let's Cook", 
+    Occupation: Methamphetamine Manufacturer,
+    Action: Cook, Portrayed By: Bryan Cranston'
+    
+    '''
+    def print_info(self):
+        print(f'Name: {self.name}, Phrase: {self.phrase}, Occupation: {self.job},'
+              f'Action: {self.action}, Portrayed By: {self.portrayed_by} ')
+        
+    
+class Walt(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Walter White',
+            phrase = 'Everything I do, I do for this family.',
+            job = 'Teacher',
+            action = 'cook',
+            portrayed_by = 'Bryan Cranston'
+        )
+        self.alias = 'Heisenberg'
