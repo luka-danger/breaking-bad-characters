@@ -88,4 +88,14 @@ class Heisenberg(Walt):
         self.phrase = 'Say my name.'
         self.job = 'Drug Kingpin'
         self.action = 'Intimidate'
+
+class Jesse(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Jesse Pinkman',
+            phrase = 'Yo, yo, yo!',
+            job = 'Meth Cook',
+            action = 'Making Fat Stacks',
+            portrayed_by = 'Aaron Paul'
+        )
     
