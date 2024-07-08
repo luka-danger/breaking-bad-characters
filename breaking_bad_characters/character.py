@@ -302,45 +302,47 @@ class Don_Eladio(Character):
         self.fun_fact = 'Don Eladio is played by Steven Bauer. He portrayed Manny in the film, Scarface. You totally did not realize '\
             'that until I said it!'
 
-class Elliot(Character):
+class Eliot(Character):
     def __init__(self):
         super().__init__(
-            name = 'Elliot Schwartz',
-            phrase = '',
+            name = 'Eliot Schwartz',
+            phrase = 'Yum-Good Ramen?! I thought they outlawed these years ago!',
             job = 'Owners of Gray Matter Technologies',
             action = 'Taking credit for Walt\'s work',
-            description = 'Elliot Schwartz is Walt\'s former research partner and co-founder of Gray Matter '\
+            description = 'Eliot Schwartz is Walt\'s former research partner and co-founder of Gray Matter '\
             'Technologies, a highly successful company in the field of applied sciences. Elliot represents Walt\'s past '\
             'ambitions and serves as a reminder of the professional success that Walter feels he has been denied.',
-            portrayed_by = 'Charles Baker'
+            portrayed_by = 'Adam Godly'
         )
 
 class Gretchen(Character):
     def __init__(self):
         super().__init__(
             name = 'Gretchen Schwartz',
-            phrase = '',
+            phrase = 'If you want to give your kids drug money, do it yourself.',
             job = 'Owners of Gray Matter Technologies',
             action = 'Taking credit for Walt\'s work',
-            description = 'Gretchen Schwartz is Elliot\'s wife and Walt\'s former girlfriend. She is also a co-founder '\
+            description = 'Gretchen Schwartz is Eliot\'s wife and Walt\'s former girlfriend. She is also a co-founder '\
             'of Gray Matter Technologies. Gretchen comes from a wealthy background and maintains a strained relationship with Walter '\
             'after their past involvement. She represents a stark contrast to Walt\'s current life and choices.',
-            portrayed_by = 'Charles Baker'
+            portrayed_by = 'Jessica Hecht'
         )
 
-## FIX ME 
 
 class Hector(Character):
     def __init__(self):
         super().__init__(
-            name = 'Skinny Pete',
-            phrase = 'Church, yo.',
-            job = 'Drug Dealer',
-            action = 'Playing the piano',
-            description = 'A friend and associate of Jesse Pinkman, Skinny Pete is a small-time meth dealer. '\
-            'He often finds himself caught up in dangerous situations.',
-            portrayed_by = 'Charles Baker'
+            name = 'Hector Salamanca',
+            phrase = '*Ding*',
+            job = 'Former drug lord for Salamanca Drug Cartel',
+            action = 'Mean mugging everyone',
+            description = 'Hector Salamanca is a former high-ranking member of the Salamanca Cartel. He is confined to a wheelchair and '\
+            'communicates through a bell due to a stroke (from being poisoned by Gus and Nacho...Better Call Saul spoiler anyone?!). Hector '\
+            'has a long history in the drug trade and holds deep animosity towards Gus Fring.',
+            portrayed_by = 'Mark Margolis'
         )
+
+## FIX ME 
 
 class Lydia(Character):
     def __init__(self):
