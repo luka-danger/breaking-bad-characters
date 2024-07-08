@@ -99,6 +99,7 @@ class Heisenberg(Walt):
             'gets what he wants through intimidation, intricate lies, manipulating others, and' \
             'sometimes killing anyone who stands in his way. He represents the egotistical and sociopathic' \
             'side of Walter White.'
+            
 
 class Jesse(Character):
     def __init__(self):
@@ -107,9 +108,9 @@ class Jesse(Character):
             phrase = 'Yo, yo, yo!',
             job = 'Meth Cook',
             action = 'Making Fat Stacks',
-            description = 'A drugee burnout and former student of Walter White. Jesse dabbles in' \
-            'drug dealing, but eventually partners with Walter White (Heisenberg) to build a massive' \
-            'drug empire.',
+            description = 'A former student of Walter White and a small-time methamphetamine manufacturer, ' \
+            'Jesse Pinkman partners with Walter to produce high-quality methamphetamine. He struggles with ' \
+            'addiction and the moral implications of his actions.',
             portrayed_by = 'Aaron Paul'
         )
 
@@ -145,7 +146,9 @@ class Hank(Character):
             phrase = 'It\'s easy money...till we catch you!', # FIX ME 
             job = 'DEA Agent',
             action = 'Obsess over Heisenberg',
-            description = '',
+            description = 'Walter White’s brother-in-law and a dedicated DEA agent. ' \
+            'Hank is committed to fighting the drug trade and is unknowingly pursuing ' \
+            'his own brother-in-law in his investigation of the methamphetamine kingpin Heisenberg.',
             portrayed_by = 'Dean Norris'
         )
 
@@ -171,3 +174,17 @@ class Tuco(Character):
             description = 'A sadistic, high-level, drug distributor for the Salamanca cartel',
             portrayed_by = 'Raymond Cruz'
         )
+
+class The_Cousins(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Marco and Leonel Salamanca',
+            phrase = 'No...muy facil.',
+            job = 'Cartel Hitmen',
+            action = 'Stare menacingly',
+            description = 'Twin hitmen working for the Salamanca drug cartel. They are known for their '\
+            'silent demeanor and relentless pursuit of their targets.',
+            portrayed_by = 'Luis and Daniel Moncada'
+        )
+        self.fun_fact = 'The actors are not actually twins, but they are related!'
+
