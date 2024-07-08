@@ -1,3 +1,5 @@
+import textwrap
+
 '''
     A parent class for Breaking Bad Characters. 
 
@@ -46,17 +48,17 @@ class Character:
     '''
     def get_info(self):
         return {
-            'Name': self.name,
-            'Phrase': self.phrase,
-            'Occupation': self.job,
-            'Action': self.action,
-            'Description': self.description,
-            'Portrayed By': self.portrayed_by
+            'Name': self.name, 
+            'Phrase': self.phrase, 
+            'Occupation': self.job, 
+            'Action': self.action, 
+            'Description': self.description, 
+            'Portrayed By': self.portrayed_by 
         }
     
     '''
-    A method that returns all info about character and displays
-    it with labels for readability and improved UX. 
+    A method that prints all info about character and displays
+    it on separate lines with labels for readability and improved UX. 
 
     Args: none
 
@@ -67,9 +69,14 @@ class Character:
     
     '''
     def print_info(self):
-        print(f'Name: {self.name}, Phrase: {self.phrase}, Occupation: {self.job}, '
-              f'Action: {self.action}, Description: {self.description}, '
-              f' Portrayed By: {self.portrayed_by} ')
+        info = self.get_info()
+        for key, value in info.items():
+            if key == 'Description':
+                # Use textwrap import to wrap text and prevent word break
+                wrapped_value = textwrap.fill(value, width=110)
+                print(f'{key}: \n{wrapped_value}')
+            else:     
+                print(f'{key}: {value}')
         
     
 class Walt(Character):
@@ -80,7 +87,7 @@ class Walt(Character):
             job = 'Teacher',
             action = 'Cook',
             description = 'An overqualified high school chemistry teacher that' \
-            'gets sick with cancer. In an effort to provide for his family, he decides to' \
+            'gets sick with cancer. In an effort to provide for his family, he decides to ' \
             'partner with former student, Jesse Pinkman, to produce and sell methamphetamine.',
             portrayed_by = 'Bryan Cranston'
         )
@@ -188,3 +195,21 @@ class The_Cousins(Character):
         )
         self.fun_fact = 'The actors are not actually twins, but they are related!'
 
+class Gus(Character):
+    def __init__(self, status):
+        super().__init__(
+            name = 'Gus Fring',
+            phrase = 'I hide in plain site.',
+            job = 'Drug Lord',
+            action = 'Run Territory north of border',
+            description = 'A highly successful and meticulous drug lord who runs a chain of fast-food ' \
+            'restaurants as a front for his methamphetamine distribution network. Gus Fring is known for ' \
+            'his calm demeanor and ruthless business tactics.',
+            portrayed_by = 'Giancarlo Esposito'
+        )
+        self.status = status; 
+
+    def set_status(self, status):
+        self.status = status
+        if status == 'angry':
+            self.phrase = 'Don Eladio esta muerto!'
