@@ -137,7 +137,7 @@ class Walter_Jr(Character):
     def __init__(self):
         super().__init__(
             name = 'Walter Jr.',
-            phrase = 'Something, something, breakfast.',
+            phrase = '** Walter jr. says something about breakfast...**',
             job = 'Son',
             action = 'Eat Breakfast',
             description = 'The son of Walter and Skyler White. He likes to eat breakfast' \
@@ -150,10 +150,10 @@ class Hank(Character):
     def __init__(self):
         super().__init__(
             name = 'Hank Schrader',
-            phrase = 'It\'s easy money...till we catch you!', # FIX ME 
+            phrase = 'It\'s easy money...till we catch you!', 
             job = 'DEA Agent',
             action = 'Obsess over Heisenberg',
-            description = 'Walter White’s brother-in-law and a dedicated DEA agent. ' \
+            description = 'Walt\'s brother-in-law and a dedicated DEA agent. ' \
             'Hank is committed to fighting the drug trade and is unknowingly pursuing ' \
             'his own brother-in-law in his investigation of the methamphetamine kingpin Heisenberg.',
             portrayed_by = 'Dean Norris'
@@ -213,3 +213,191 @@ class Gus(Character):
         self.status = status
         if status == 'angry':
             self.phrase = 'Don Eladio esta muerto!'
+
+class Saul(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Saul Goodman',
+            phrase = 'Better Call Saul!',
+            job = 'Lawyer',
+            action = 'Scheme elaborately',
+            description = 'A flamboyant and unscrupulous lawyer who represents Walter White and Jesse Pinkman. '\
+            'He is adept at bending the law to suit client needs.',
+            portrayed_by = 'Bob Odenkirk'
+        )
+        self.alias = 'Jimmy McGill'
+
+class Mike(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Mike Ehrmantraut',
+            phrase = 'No more half measures',
+            job = '"Problem Fixer"',
+            action = 'Choke people at Cartel Pool Party.',
+            description = 'A former Philadelphia police officer and a fixer for Gus Fring. Mike Ehrmantraut is '\
+            'highly skilled in security and enforcement, often handling difficult situations with a calm and methodical approach.',
+            portrayed_by = 'Jonathan Banks'
+        )
+
+class Badger(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Badger',
+            phrase = 'Darth Vader Had Responsibilities. He Was Responsible For The Death Star.',
+            job = 'Drug Dealer',
+            action = '**HELICOPTER**',
+            description = 'A friend of Jesse, Badger is a well-meaning but often clueless individual '\
+            'who frequently gets into trouble.',
+            portrayed_by = 'Matt Jones'
+        )
+
+class Skinny_Pete(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Skinny Pete',
+            phrase = 'Church, yo.',
+            job = 'Drug Dealer',
+            action = 'Playing the piano',
+            description = 'A friend and associate of Jesse Pinkman, Skinny Pete is a small-time meth dealer. '\
+            'He often finds himself caught up in dangerous situations.',
+            portrayed_by = 'Charles Baker'
+        )
+    
+class Jane(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Jane Margolis',
+            phrase = 'D-B-A-A',
+            job = 'Artist',
+            action = 'Draw',
+            description = 'Jane Margolis is the girlfriend of Jesse Pinkman and a recovering drug addict. '\
+            'She offers Jesse emotional support but ends up introducing him to heroin, which ultimately leads' \
+            'to tragic consequences.',
+            portrayed_by = 'Krysten Ritter'
+        )
+
+class Gomez(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Steve Gomez',
+            phrase = 'Operation Breath Mint.',
+            job = 'DEA Agent',
+            action = 'Bustin bad guys. DEA Style!',
+            description = 'Hank\'s loyal and competent partner at the DEA. He is dedicated to his job '\
+            'and supports Hank in his pursuit of the drug trade, often providing crucial insights and backup.',
+            portrayed_by = 'Steven Michael Quezada'
+        )
+
+class Don_Eladio(Character):
+    def __init__(self, fun_fact):
+        super().__init__(
+            name = 'Don Eladio Veunte',
+            phrase = 'Salud.',
+            job = 'Drug Kingpin for Salamanca Cartel',
+            action = 'Drink poisoned Zafiro Anejo',
+            description = 'Don Eladio Vuente is a powerful and ruthless Mexican drug lord who controls the cartel '\
+            'that Gus Fring ultimately seeks to overthrow. He commands respect and fear among his associates and rivals.',
+            portrayed_by = 'Steven Bauer'
+        )
+        self.fun_fact = 'Don Eladio is played by Steven Bauer. He portrayed Manny in the film, Scarface. You totally did not realize '\
+            'that until I said it!'
+
+class Elliot(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Elliot Schwartz',
+            phrase = '',
+            job = 'Owners of Gray Matter Technologies',
+            action = 'Taking credit for Walt\'s work',
+            description = 'Elliot Schwartz is Walt\'s former research partner and co-founder of Gray Matter '\
+            'Technologies, a highly successful company in the field of applied sciences. Elliot represents Walt\'s past '\
+            'ambitions and serves as a reminder of the professional success that Walter feels he has been denied.',
+            portrayed_by = 'Charles Baker'
+        )
+
+class Gretchen(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Gretchen Schwartz',
+            phrase = '',
+            job = 'Owners of Gray Matter Technologies',
+            action = 'Taking credit for Walt\'s work',
+            description = 'Gretchen Schwartz is Elliot\'s wife and Walt\'s former girlfriend. She is also a co-founder '\
+            'of Gray Matter Technologies. Gretchen comes from a wealthy background and maintains a strained relationship with Walter '\
+            'after their past involvement. She represents a stark contrast to Walt\'s current life and choices.',
+            portrayed_by = 'Charles Baker'
+        )
+
+## FIX ME 
+
+class Hector(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Skinny Pete',
+            phrase = 'Church, yo.',
+            job = 'Drug Dealer',
+            action = 'Playing the piano',
+            description = 'A friend and associate of Jesse Pinkman, Skinny Pete is a small-time meth dealer. '\
+            'He often finds himself caught up in dangerous situations.',
+            portrayed_by = 'Charles Baker'
+        )
+
+class Lydia(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Skinny Pete',
+            phrase = 'Church, yo.',
+            job = 'Drug Dealer',
+            action = 'Playing the piano',
+            description = 'A friend and associate of Jesse Pinkman, Skinny Pete is a small-time meth dealer. '\
+            'He often finds himself caught up in dangerous situations.',
+            portrayed_by = 'Charles Baker'
+        )
+
+class Todd(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Skinny Pete',
+            phrase = 'Church, yo.',
+            job = 'Drug Dealer',
+            action = 'Playing the piano',
+            description = 'A friend and associate of Jesse Pinkman, Skinny Pete is a small-time meth dealer. '\
+            'He often finds himself caught up in dangerous situations.',
+            portrayed_by = 'Charles Baker'
+        )
+
+class Uncle_Jack(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Skinny Pete',
+            phrase = 'Church, yo.',
+            job = 'Drug Dealer',
+            action = 'Playing the piano',
+            description = 'A friend and associate of Jesse Pinkman, Skinny Pete is a small-time meth dealer. '\
+            'He often finds himself caught up in dangerous situations.',
+            portrayed_by = 'Charles Baker'
+        )
+
+class Gale(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Skinny Pete',
+            phrase = 'Church, yo.',
+            job = 'Drug Dealer',
+            action = 'Playing the piano',
+            description = 'A friend and associate of Jesse Pinkman, Skinny Pete is a small-time meth dealer. '\
+            'He often finds himself caught up in dangerous situations.',
+            portrayed_by = 'Charles Baker'
+        )
+
+class Vacuum_Guy(Character):
+    def __init__(self):
+        super().__init__(
+            name = 'Skinny Pete',
+            phrase = 'Church, yo.',
+            job = 'Drug Dealer',
+            action = 'Playing the piano',
+            description = 'A friend and associate of Jesse Pinkman, Skinny Pete is a small-time meth dealer. '\
+            'He often finds himself caught up in dangerous situations.',
+            portrayed_by = 'Charles Baker'
+        )
